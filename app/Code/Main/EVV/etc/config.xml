@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<config>
+    <evv>
+        <version>0.0.1</version>
+        <title>EVV</title>
+        <description>Electronic Visit Verification Module</description>
+        <author>
+            <name>Kevin Marcum</name>
+            <email>kevin@enicity.com</email>
+        </author>
+        <module>
+            <name>EVV</name>
+            <weight>50</weight>
+            <required>Y</required>
+            <workflow>Y</workflow>
+            <package>Main</package>
+            <use>Smarty3</use>
+        </module>
+        <structure>
+            <models>
+                <source>EVV/Models</source>
+            </models>
+            <config>
+                <source>EVV/etc</source>
+            </config>
+            <helpers>
+                <source>EVV/Helpers</source>
+            </helpers>
+            <controllers>
+                <source>EVV/Controllers</source>
+                <cache>EVV/Controllers/Cache</cache>
+            </controllers>
+            <schema>
+                <install>EVV/Schema/Install</install>
+                <update>EVV/Schema/Update</update>
+                <layout>EVV/Schema/DSL</layout>
+            </schema>
+            <configuration>
+                <source>EVV/etc</source>
+            </configuration>
+            <views>
+                <source>EVV/Views</source>
+                <cache>EVV/Views/Cache</cache>
+            </views>
+            <images>
+                <source>EVV/Images</source>
+                <cache>EVV/Images/Cache</cache>
+            </images>
+            <entities>
+                <source>EVV/Entities</source>
+            </entities>
+            <RPC>
+                <source>EVV/RPC</source>
+            </RPC>
+            <frontend>
+                <source>EVV/web/app</source>
+            </frontend>
+        </structure>
+        <orm>
+            <prefix>evv_</prefix>
+            <mongodb>evv</mongodb>
+            <entities>
+                
+            </entities>
+        </orm>
+
+        <web>
+            <!-- Edits are used for separating form validation from the form -->
+            <edits>
+                
+            </edits>
+            <hook>
+                <!-- #################################################
+                     This is where the JS lives for your module
+
+                     Set the 'hook' name appropriately, and use as
+                       many hooks as you'd like
+                     #################################################    -->
+                <js>
+                    <source>EVV/web/js/EVV.js</source>
+                </js>
+                <css>
+                    <source>EVV/web/css/EVV.css</source>
+                </css>
+            </hook>
+        </web>
+    </evv>
+</config>

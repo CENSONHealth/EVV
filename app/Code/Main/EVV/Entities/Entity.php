@@ -1,0 +1,25 @@
+<?php
+namespace Code\Main\EVV\Entities;
+/**    
+ * Entity Base Transfer Class
+ *
+ * All entities classes must extend this class
+ *
+ * PHP version 5.5+
+ *
+ * LICENSE:
+ *
+ * @category   Entity
+ * @package    EVV
+ * @author     Original Author <>
+ * @copyright  2005-Present Jarvis Project
+ * @license    https://license.enicity.com
+ * @version    3.0.0
+ * @link       http://pear.php.net/package/PackageName
+
+ */
+class Entity extends \Code\Base\Core\Entity\Object
+{
+
+}
+?>

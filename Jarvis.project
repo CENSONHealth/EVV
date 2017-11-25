@@ -1,0 +1,12 @@
+{
+	"project_name":"EVV",
+	"project_url":"http:\/\/evv.enicity.dev",
+	"factory_name":"ESF",
+	"framework_url":"http:\/\/jarvis.enicity.com",
+	"module":"EVV",
+	"namespace":"evv",
+	"package":"Main",
+	"landing_page":"\/evv\/home\/page",
+	"author":"kevin@enicity.com",
+	"destination_folder":"C:\\www\\EVV"
+}
